@@ -9,4 +9,8 @@ public class PrintUtils {
             System.out.print(num + ", ");
         }
     }
+
+    public static void printTime(long start, long stop) {
+       System.out.printf("Time: %f ms", (stop - start) / 1000000f);
+    }
 }
