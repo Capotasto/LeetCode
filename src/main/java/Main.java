@@ -6,7 +6,8 @@ public class Main {
     public static void main(String[] args) {
         long start = System.nanoTime();
 //        executeTowSum();
-        executeReverseInteger();
+//        executeReverseInteger();
+        executePalindromeNumber();
         long stop = System.nanoTime();
 
         PrintUtils.printTime(start, stop);
@@ -23,6 +24,12 @@ public class Main {
     private static void executeReverseInteger() {
         int x1 = 999999999;
         int result = ReverseInteger.answer1(x1);
+        PrintUtils.print(result);
+    }
+
+    private static void executePalindromeNumber() {
+        int x = 2147483647;
+        boolean result = PalindromeNumber.isPalindrome(x);
         PrintUtils.print(result);
     }
 }

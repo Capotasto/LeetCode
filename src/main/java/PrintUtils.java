@@ -14,6 +14,10 @@ public class PrintUtils {
         System.out.printf("Result: %d", num);
     }
 
+    public static void print(boolean flag) {
+        System.out.printf("Result: %s", flag);
+    }
+
     public static void printTime(long start, long stop) {
        System.out.printf("\nTime: %f ms", (stop - start) / 1000000f);
     }
