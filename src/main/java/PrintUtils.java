@@ -10,7 +10,11 @@ public class PrintUtils {
         }
     }
 
+    public static void print(int num) {
+        System.out.printf("Result: %d", num);
+    }
+
     public static void printTime(long start, long stop) {
-       System.out.printf("Time: %f ms", (stop - start) / 1000000f);
+       System.out.printf("\nTime: %f ms", (stop - start) / 1000000f);
     }
 }
